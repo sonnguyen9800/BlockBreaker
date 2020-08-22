@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4052902678630440663
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4207398221218276621}
+  m_Layer: 0
+  m_Name: Ball position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4207398221218276621
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4052902678630440663}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6625392818602069830}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6625392818602069882
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +41,9 @@ GameObject:
   - component: {fileID: 6625392818602069830}
   - component: {fileID: 6625392818602069829}
   - component: {fileID: 6625392818602069828}
-  - component: {fileID: 6625392818602069883}
+  - component: {fileID: 7374140554508495458}
+  - component: {fileID: 2474827953835205668}
+  - component: {fileID: 734478263594257704}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -29,7 +61,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.219, y: -2.65, z: 0}
   m_LocalScale: {x: 0.9944944, y: 0.91191137, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4207398221218276621}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -105,7 +138,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!60 &6625392818602069883
+--- !u!114 &7374140554508495458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6625392818602069882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c8b86da173d0a4f928f59a99ec0818, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2474827953835205668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6625392818602069882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 184622ad430233346a10e3e4cc40c5f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+--- !u!60 &734478263594257704
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,11 +188,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.6690853, y: 0.31557104}
-      - {x: -0.6609634, y: 0.32}
-      - {x: -1.0800486, y: 0.13978893}
-      - {x: -1.2840611, y: 0.05342734}
+    - - {x: 0.72999996, y: 0.32}
+      - {x: -0.72999996, y: 0.32}
+      - {x: -1.28, y: 0.08}
       - {x: -1.28, y: -0.32}
       - {x: 1.28, y: -0.32}
-      - {x: 1.2678174, y: 0.050141}
-      - {x: 1.0862442, y: 0.12685493}
+      - {x: 1.28, y: 0.089999996}
+      - {x: 1.0699999, y: 0.17999999}
