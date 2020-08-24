@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveComponent : MonoBehaviour
 {
-    [SerializeField] private float speed = 0;
+    [Range(0.0f, 50.0f)] [SerializeField] private float speed = 0;
     private Rigidbody2D rb;
     private void Awake()
     {
@@ -20,5 +20,10 @@ public class MoveComponent : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public float getSpeed()
+    {
+        return this.speed;
     }
 }
