@@ -16,6 +16,20 @@ public class Paddle : MonoBehaviour
     {
         
     }
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            Debug.Log(" Wall coming ");
+            Rigidbody rbdy = collision.gameObject.GetComponent<Rigidbody>();
+
+            //Stop Moving/Translating
+            rbdy.velocity = Vector3.zero;
+
+            //Stop rotating
+            rbdy.angularVelocity = Vector3.zero;
+        }
+    }
 
     // Update is called once per frame
     void Update()
@@ -26,6 +40,9 @@ public class Paddle : MonoBehaviour
         movement = new Vector3(moveHorizontal, 0f, 0f);
         movement = movement * speed * Time.deltaTime;
 
-        transform.position += movement;
+       
+            transform.position += movement;
+        
+        
     }
 }

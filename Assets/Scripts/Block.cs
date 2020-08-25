@@ -20,11 +20,7 @@ public class Block : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Collision");
-        
-        Debug.Log(collision.collider.gameObject.name);
-        Debug.Log(collision.otherCollider.gameObject.name);
-        HandleHit();   
+        HandleHit();
     }
 
     private void HandleHit()
