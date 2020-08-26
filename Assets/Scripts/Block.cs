@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿#pragma warning disable 0649
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,55 +8,48 @@ public class Block : MonoBehaviour
 {
 
     // config params
-    [SerializeField] AudioClip breakSound = null;
-    [SerializeField] GameObject blockSparklesVFX;
-    [SerializeField] Sprite[] hitSprites;
+    [SerializeField] private AudioClip breakSound = null;
+    [SerializeField] private GameObject blockSparklesVFX;
+    [SerializeField] private Sprite[] hitSprites;
+    private SpriteRenderer spriteRenderer;
+    private int currentHP;
     // state variables
-    [SerializeField] int timesHit;  // TODO only serialized for debug purposes
-
-    private void Start()
+    private void Awake()
     {
-      
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        currentHP = hitSprites.Length;
+        SetSprite(currentHP);
     }
-
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Ball ball = collision.gameObject.GetComponent<Ball>();
+        if (ball == null) return;
         HandleHit();
     }
 
     private void HandleHit()
     {
-        timesHit++;
-        int maxHits = hitSprites.Length + 1;
-        if (timesHit >= maxHits)
+        currentHP--;
+        if (currentHP <= 0)
         {
             DestroyBlock();
         }
         else
         {
-            ShowNextHitSprite();
+            SetSprite(currentHP);
         }
     }
 
-    private void ShowNextHitSprite()
+    private void SetSprite(int health)
     {
-        int spriteIndex = timesHit - 1;
-        if (hitSprites[spriteIndex] != null)
-        {
-            GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
-        }
-        else
-        {
-            Debug.LogError("Block sprite is missing from array" + gameObject.name);
-        }
+        spriteRenderer.sprite = hitSprites[health - 1];
     }
 
     private void DestroyBlock()
     {
         PlayBlockDestroySFX();
-        Destroy(gameObject);
         TriggerSparklesVFX();
+        Destroy(gameObject);
     }
 
     private void PlayBlockDestroySFX()
