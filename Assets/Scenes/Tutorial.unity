@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &202025957 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6228465256182160727, guid: 50b8a3372c8c4e64da9c2434a935d065, type: 3}
+  m_PrefabInstance: {fileID: 718667318}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &614308464
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,7 +367,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1853204594667738298, guid: e60082906683b6d4392fdd13e91479ef, type: 3}
       propertyPath: m_GravityScale
-      value: 0.5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873794554699981596, guid: e60082906683b6d4392fdd13e91479ef, type: 3}
+      propertyPath: paddle
+      value: 
+      objectReference: {fileID: 202025957}
+    - target: {fileID: 4873794554699981596, guid: e60082906683b6d4392fdd13e91479ef, type: 3}
+      propertyPath: isPlay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873794554699981596, guid: e60082906683b6d4392fdd13e91479ef, type: 3}
+      propertyPath: speed
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 6116305958272672175, guid: e60082906683b6d4392fdd13e91479ef, type: 3}
       propertyPath: m_Name
@@ -431,6 +448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c8b86da173d0a4f928f59a99ec0818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
 --- !u!114 &2023902254
 MonoBehaviour:
   m_ObjectHideFlags: 0
