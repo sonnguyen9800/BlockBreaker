@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6625392818602069829}
   - component: {fileID: 6625392818602069828}
   - component: {fileID: 6625392818602069883}
+  - component: {fileID: 8817756419333238927}
+  - component: {fileID: 2939892568334942063}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -27,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6625392818602069882}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.219, y: -2.65, z: 0}
+  m_LocalPosition: {x: -7.258, y: -2.772, z: 0}
   m_LocalScale: {x: 0.9944944, y: 0.91191137, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -104,7 +106,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!60 &6625392818602069883
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -114,7 +116,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 6625392818602069882}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 1d65b2497a63cbe47a98eed4bb40eb81, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -130,11 +132,35 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.6690853, y: 0.31557104}
-      - {x: -0.6609634, y: 0.32}
-      - {x: -1.0800486, y: 0.13978893}
-      - {x: -1.2840611, y: 0.05342734}
+    - - {x: 0.72999996, y: 0.32}
+      - {x: -0.72999996, y: 0.32}
+      - {x: -1.28, y: 0.08}
       - {x: -1.28, y: -0.32}
       - {x: 1.28, y: -0.32}
-      - {x: 1.2678174, y: 0.050141}
-      - {x: 1.0862442, y: 0.12685493}
+      - {x: 1.28, y: 0.089999996}
+      - {x: 1.0699999, y: 0.17999999}
+--- !u!114 &8817756419333238927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6625392818602069882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 184622ad430233346a10e3e4cc40c5f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 9.8
+--- !u!114 &2939892568334942063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6625392818602069882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c8b86da173d0a4f928f59a99ec0818, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
