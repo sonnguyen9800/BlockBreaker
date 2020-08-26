@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿#pragma warning disable 0649
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,6 +22,8 @@ public class Block : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Ball ball = collision.gameObject.GetComponent<Ball>();
+        if (ball == null) return;
         HandleHit();
     }
 
@@ -36,9 +40,9 @@ public class Block : MonoBehaviour
         }
     }
 
-    private void SetSprite(int index)
+    private void SetSprite(int health)
     {
-        spriteRenderer.sprite = hitSprites[index];
+        spriteRenderer.sprite = hitSprites[health - 1];
     }
 
     private void DestroyBlock()
