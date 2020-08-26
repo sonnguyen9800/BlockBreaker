@@ -5,13 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-   public void startGame()
+    public void LoadScene(string name)
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene(name);
     }
-
-
-    public void exitGame()
+    public void Quit()
     {
         Application.Quit();
     }
