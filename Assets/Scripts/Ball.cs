@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
+    [SerializeField] private AudioClip bouncingSound = null;
     [SerializeField]
     private Transform paddle; //get the paddle position
     [SerializeField]
@@ -27,6 +28,15 @@ public class Ball : MonoBehaviour
         {
             transform.position = paddle.position;
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        PlayBouncingSoundSFX();
+    }
+    private void PlayBouncingSoundSFX()
+    {
+        AudioSource.PlayClipAtPoint(bouncingSound, Camera.main.transform.position);
     }
     public void LaunchBall()
     {
