@@ -20,6 +20,7 @@ public class Block : MonoBehaviour
         currentHP = hitSprites.Length;
         SetSprite(currentHP);
     }
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Ball ball = collision.gameObject.GetComponent<Ball>();
