@@ -41,7 +41,6 @@ public class GameManager : MonoBehaviour
         }
         if (gameState == GameState.END)
         {
-            Debug.Log("Die");
             ball.Die();
             return;
         }
@@ -52,7 +51,6 @@ public class GameManager : MonoBehaviour
         Debug.Log("Current health:" + currentHP);
         if (currentHP > 0)
         {
-            // ball.HasTouchBottom = false;
             ball.MoveToPaddle();
             gameState = GameState.IDLE;
         }
