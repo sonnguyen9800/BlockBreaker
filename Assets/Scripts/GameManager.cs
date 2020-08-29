@@ -12,16 +12,20 @@ public class GameManager : MonoBehaviour
         PLAYING,
         END
     }
-    [SerializeField]
-    private KeyCode launchKey = KeyCode.UpArrow;
-    [SerializeField]
-    private Ball ball;
-    [SerializeField]
-    private int currentHP = 3;
+    
+    [SerializeField]private KeyCode launchKey = KeyCode.UpArrow;
+    [SerializeField]private Ball ball;
+    [SerializeField]private int currentHP = 3;
+    [SerializeField]private Hitpoint hitpointDisplayer;
     private GameState gameState = GameState.IDLE;
+
+    private void Start()
+    {
+        hitpointDisplayer.changeLife(this.currentHP);
+    }
     private void Update()
     {
-        Debug.Log(gameState);
+        //Debug.Log(gameState);
         if (gameState == GameState.IDLE)
         {
             if (Input.GetKeyDown(launchKey))
@@ -48,7 +52,8 @@ public class GameManager : MonoBehaviour
     public void LoseHealth()
     {
         currentHP--;
-        Debug.Log("Current health:" + currentHP);
+        hitpointDisplayer.changeLife(this.currentHP);
+        //Debug.Log("Current health:" + currentHP);
         if (currentHP > 0)
         {
             ball.MoveToPaddle();
