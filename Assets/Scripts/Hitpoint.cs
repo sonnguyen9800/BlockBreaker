@@ -11,6 +11,7 @@ public class Hitpoint : MonoBehaviour
     private void Awake()
     {
         textMesh = gameObject.GetComponent<TextMeshProUGUI>();
+        transform.SetAsLastSibling();
     }
     void Start()
     {
