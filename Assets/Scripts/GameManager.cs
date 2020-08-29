@@ -21,7 +21,14 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        hitpointDisplayer.changeLife(this.currentHP);
+        if (hitpointDisplayer == null)
+        {
+            Debug.LogError("Null hitpoint");
+        }else
+        {
+            hitpointDisplayer.setLife(this.currentHP);
+        }
+        
     }
     private void Update()
     {
@@ -52,7 +59,7 @@ public class GameManager : MonoBehaviour
     public void LoseHealth()
     {
         currentHP--;
-        hitpointDisplayer.changeLife(this.currentHP);
+        hitpointDisplayer.setLife(this.currentHP);
         //Debug.Log("Current health:" + currentHP);
         if (currentHP > 0)
         {
