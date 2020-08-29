@@ -557,26 +557,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6625392818602069828, guid: 50b8a3372c8c4e64da9c2434a935d065, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: bcad189a0100c4f44b1f80e0262e9800, type: 2}
-    - target: {fileID: 6625392818602069828, guid: 50b8a3372c8c4e64da9c2434a935d065, type: 3}
-      propertyPath: m_UseAutoMass
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6625392818602069828, guid: 50b8a3372c8c4e64da9c2434a935d065, type: 3}
-      propertyPath: m_Mass
-      value: 1.3686341
-      objectReference: {fileID: 0}
-    - target: {fileID: 6625392818602069828, guid: 50b8a3372c8c4e64da9c2434a935d065, type: 3}
-      propertyPath: m_Constraints
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6625392818602069828, guid: 50b8a3372c8c4e64da9c2434a935d065, type: 3}
-      propertyPath: m_LinearDrag
-      value: 0.8
-      objectReference: {fileID: 0}
     - target: {fileID: 6625392818602069830, guid: 50b8a3372c8c4e64da9c2434a935d065, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -625,10 +605,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Paddle
       objectReference: {fileID: 0}
-    - target: {fileID: 6625392818602069883, guid: 50b8a3372c8c4e64da9c2434a935d065, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: bcad189a0100c4f44b1f80e0262e9800, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50b8a3372c8c4e64da9c2434a935d065, type: 3}
 --- !u!1 &1168513914
