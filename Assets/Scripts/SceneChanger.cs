@@ -9,8 +9,14 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene(name);
     }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
     public void Quit()
     {
+        Debug.Log("Button has been clicked");
         Application.Quit();
     }
 }
