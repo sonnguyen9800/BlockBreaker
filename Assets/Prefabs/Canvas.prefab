@@ -261,7 +261,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4598452922683078569}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 15}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7832451872309851842}
@@ -619,7 +619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 547035990042121406, guid: 69e7d2ea7884cfd4d97de4b5d334d66b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 651
+      value: -852
       objectReference: {fileID: 0}
     - target: {fileID: 547035990042121406, guid: 69e7d2ea7884cfd4d97de4b5d334d66b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -660,10 +660,6 @@ PrefabInstance:
     - target: {fileID: 547035990311168989, guid: 69e7d2ea7884cfd4d97de4b5d334d66b, type: 3}
       propertyPath: m_Name
       value: HP
-      objectReference: {fileID: 0}
-    - target: {fileID: 547035990311168989, guid: 69e7d2ea7884cfd4d97de4b5d334d66b, type: 3}
-      propertyPath: m_Layer
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69e7d2ea7884cfd4d97de4b5d334d66b, type: 3}

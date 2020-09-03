@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 547035990311168979}
   - component: {fileID: 547035990311168988}
   - component: {fileID: 1508546469374644537}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: HP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
