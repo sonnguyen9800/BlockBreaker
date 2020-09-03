@@ -11,6 +11,7 @@ public class Block : MonoBehaviour
     [SerializeField] private AudioClip breakSound = null;
     [SerializeField] private GameObject blockSparklesVFX;
     [SerializeField] private Sprite[] hitSprites;
+    GameManager gameManager;
     private SpriteRenderer spriteRenderer;
     private int currentHP;
     // state variables
@@ -19,13 +20,22 @@ public class Block : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         currentHP = hitSprites.Length;
         SetSprite(currentHP);
+
+        // Initialize Game Manager:
+        gameManager = FindObjectOfType<GameManager>();
+
     }
-    
+
+    private void Start()
+    {
+        gameManager.addBlock();
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Ball ball = collision.gameObject.GetComponent<Ball>();
         if (ball == null) return;
         HandleHit();
+  
     }
 
     private void HandleHit()
@@ -34,6 +44,7 @@ public class Block : MonoBehaviour
         if (currentHP <= 0)
         {
             DestroyBlock();
+            gameManager.blockDestroyed();
         }
         else
         {

@@ -18,7 +18,16 @@ public class GameManager : MonoBehaviour
     [SerializeField]private Ball ball;
     [SerializeField]private int currentHP = 3;
     [SerializeField]private Hitpoint hitpointDisplayer;
+    [SerializeField]private int numBlocks = 0;
+
     private GameState gameState = GameState.IDLE;
+    private Scene currentScene;
+
+
+    private void Awake()
+    {
+        currentScene = SceneManager.GetActiveScene();
+    }
 
     private void Start()
     {
@@ -74,6 +83,32 @@ public class GameManager : MonoBehaviour
         }
 
 
+    }
+
+    public void blockDestroyed()
+    {
+        this.numBlocks--;
+
+        if (this.numBlocks == 0)
+        {
+            switch (currentScene.name)
+            {
+                case ("Level1"):
+                    SceneManager.LoadScene("Level2");
+                    break;
+                case ("Level2"):
+                    SceneManager.LoadScene("Level3");
+                    break;
+                case ("Level3"):
+                    SceneManager.LoadScene("VictoryScene");
+                    break;
+            }
+        }
+    }
+
+    public void addBlock()
+    {
+        this.numBlocks++;
     }
 
 }
