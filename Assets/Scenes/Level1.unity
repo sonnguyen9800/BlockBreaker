@@ -215,6 +215,10 @@ PrefabInstance:
       propertyPath: hitpointDisplayer
       value: 
       objectReference: {fileID: 1479915443}
+    - target: {fileID: 4059328936496619264, guid: 5419b2e707094b043a1a0698cf9a9ddc, type: 3}
+      propertyPath: currentHP
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 4059328936496619265, guid: 5419b2e707094b043a1a0698cf9a9ddc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.2542696

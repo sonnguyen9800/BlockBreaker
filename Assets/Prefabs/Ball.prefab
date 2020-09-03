@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ec59d2c9b41204fa325588d3751e0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bouncingSound: {fileID: 8300000, guid: 6ea35abddb3785b41b468d2c5ad34714, type: 3}
+  bouncingSound: {fileID: 8300000, guid: d58425e278fd83943bb6c64bc937a2bf, type: 3}
   paddle: {fileID: 0}
   force: 10
 --- !u!50 &1853204594667738298
