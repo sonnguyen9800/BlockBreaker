@@ -45,5 +45,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   launchKey: 273
   ball: {fileID: 0}
-  currentHP: 3
+  currentHP: 30
   hitpointDisplayer: {fileID: 0}
+  numBlocks: 0
