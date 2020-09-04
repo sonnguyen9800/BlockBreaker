@@ -8,6 +8,7 @@ A Clone of Breakout-style franchise.
 Visit this link to know more about this game-genre
 https://www.gamasutra.com/view/feature/1630/breaking_down_breakout_system_and_.php?print=1
 
+# Version: 1.0.0 (4/09/2020)
 
 # Images and Demostration
 
