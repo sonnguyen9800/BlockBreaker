@@ -864,10 +864,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3035123895104398898, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035123895104398898, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 450
+      objectReference: {fileID: 0}
     - target: {fileID: 3035123895104398899, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1473191344}
+    - target: {fileID: 3035123895104398899, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3035123895104398924, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -951,6 +963,70 @@ PrefabInstance:
     - target: {fileID: 3035123895104398924, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035123895104398924, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035123895104398924, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035123895104398924, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035123895230841785, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035123895230841785, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035123895230841785, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035123895230841785, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035123895230841785, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035123895230841785, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718110877896585064, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718110877896585064, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718110877896585064, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718110877896585064, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718110877896585064, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -98.910034
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718110877896585064, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 21.916779
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718110877896585064, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 197.82007
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b401609af22ad5458473744dc39d8d2, type: 3}
