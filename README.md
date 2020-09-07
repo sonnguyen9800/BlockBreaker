@@ -18,8 +18,8 @@ https://www.gamasutra.com/view/feature/1630/breaking_down_breakout_system_and_.p
 
 # Contributors:
 - Son Nguyen Hoang
-- Khai Truong
-- Jacky
+- Khai Truong (https://github.com/khaitruong922)
+- Jacky (https://github.com/Trung-RMIT-3695656)
 
 # Engine and Tools:
 - Unity engine
